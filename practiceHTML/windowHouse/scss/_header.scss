@@ -1,0 +1,144 @@
+.box__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 56px;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center; 
+    position: relative;
+    top: -8px;
+
+    width: 56px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  background-color: #EF7F04;
+  border-radius: 3px;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -15px;
+  border-radius: 3px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 15px;
+  border-radius: 3px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100vh;
+    margin: 0;
+    padding: 102px 0;
+    list-style: none;
+    text-align: center;
+    background-color: white;
+    color: black;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    border-radius: 3px;
+}
+  
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background-color: White;
+    color: #EF7F04;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+    &-request {
+        background-color: #EF7F04;
+        margin: 0 10px;
+    }
+
+    &-order {
+        background-color: #3B3A63;
+    }
+
+    &-form {
+        background-color: #EF7F04;
+        padding: 20px 50px;
+    }
+
+    &-message {
+        background-color: #3B3A63;
+        padding: 20px 50px;
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+}
+
+.burger {
+    display: none;
+    margin-right: 40px;
+
+    @media screen and (max-width: 992px) {
+        display: block;
+    }
+}
+
+.burgernone {
+    display: none;
+    margin-right: 20px;
+
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+}

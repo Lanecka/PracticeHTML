@@ -1,0 +1,26 @@
+.portfolio {
+    max-width: 1200px;
+    background-color: white;
+    margin-bottom: 0;
+    padding: 20px;
+    border-start-start-radius: 3px;
+    border-start-end-radius: 3px;
+
+    @media screen and (max-width: 992px) {
+        max-width: 880px;
+    }
+
+    &-element {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 50px;
+        padding-bottom: 30px;
+
+        @media screen and (max-width: 992px) {
+            &__img:last-child {
+                display: none;
+            }
+        }    
+    }
+}

@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto';
+    background-color: #F2F2F2;
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #ffffff;
+    
+    @media screen and (max-width: 992px) {
+        padding: 0;
+    }
+}
+
+button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+img {
+    display: block;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+summary:hover {
+    color: #EF7F04;
+  }
+  
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: url("../img/portfolio/arrow/down.svg");
+}
+
+details[open] {
+    padding-bottom: 30px;
+}
+
+details[open] > summary::after {
+    content: url("../img/portfolio/arrow/up.svg");
+}
+
+textarea {
+    resize: none;
+}
+
+footer {
+    background-color: #3B3A63;
+    width: 100%;
+    height: 150px;
+    padding: 50px;
+}

@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &-start {
+        display: flex;
+        align-items: center;
+        color: white;
+
+        &__text {
+            margin-left: 20px;
+        }
+    }
+
+    &-link {
+        display: flex;
+        align-items: center;
+        
+        &__text {
+            color: white;
+            font-size: 14px;
+
+            &-one {
+                color: white;
+                margin-right: 40px;
+                font-size: 14px;
+            }
+        }
+    }
+}

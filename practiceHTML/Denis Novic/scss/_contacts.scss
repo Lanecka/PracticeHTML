@@ -1,0 +1,21 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    &-socialMedia {
+        align-content: space-around;
+        margin-bottom: 25px;
+
+        &__icon {
+            margin: 0 15px;
+        }
+    }
+
+    &-added {
+        font-size: 14px;
+        color: #828282;
+    }
+}

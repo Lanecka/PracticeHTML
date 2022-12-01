@@ -1,0 +1,96 @@
+.company {
+    &-elements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        border-radius: 3px;
+    }   
+
+    &-description {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        background-color: white;
+        max-width: 1200px;
+        max-height: 462px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+
+    &-benefits {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        padding: 20px 40px;
+
+        @media screen and (max-width: 992px) {
+            max-width: 880px;
+        }
+    }
+}
+      
+.case {
+    display: flex;
+    align-items: flex-start;
+    width: 30%;
+    margin: 20px 15px;
+
+    @media screen and (max-width: 992px) {
+        width: 45%;
+    }
+
+    &-icon {
+        margin-right: 20px;
+    
+        &__loyalty {
+            @media screen and (max-width: 992px) {
+                padding: 0 12px;
+            }
+        }
+
+        &__mobility {
+            @media screen and (max-width: 992px) {
+                padding: 0 4px;
+            }
+        }
+
+        &__rate {
+            padding: 0 20px;
+
+            @media screen and (max-width: 992px) {
+                padding: 0 5px;
+            }
+        }
+
+        &__quality {
+            @media screen and (max-width: 992px) {
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    align-content: space-between;
+    padding: 50px;
+
+
+    &-logotype {
+        margin-bottom: 40px;
+    }
+
+    &-indent {
+        width: 55%;
+        position: relative;
+        align-self: flex-end;
+        
+        @media screen and (max-width: 992px) {
+            width: 80%;
+        }
+    }
+}

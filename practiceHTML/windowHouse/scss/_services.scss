@@ -1,0 +1,61 @@
+.service-element {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+.card {
+    width: 45%;
+    margin: 20px;
+
+    @media screen and (max-width: 992px) {
+        width: 60%;
+    }
+
+    &-header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        
+        &__title {
+            text-align: left;
+            margin-left: 20px;
+        }
+    }
+
+    &-setting {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../img/bgrsetting.svg);
+        padding: 50px 180px 20px 50px;
+        border-radius: 3px;
+    }
+
+    &-loggia {
+        background-image: url(../img/bgrloggia.svg);
+        padding: 50px 180px 2px 50px;
+        border-radius: 3px;
+    }
+
+    &-dacha {
+        background-image: url(../img/bgrdacha.svg);
+        padding: 50px 200px 2px 50px;
+        border-radius: 3px;
+    }
+
+    &-other {
+        background-image: url(../img/bgrother.svg);
+        padding: 50px 150px 20px 50px;
+        border-radius: 3px;
+    }
+} 

@@ -1,0 +1,22 @@
+.faq {
+    max-width: 1200px;
+    background-color: #EF7F04;
+    padding: 50px 100px;
+    border-end-end-radius: 3px;
+    border-end-start-radius: 3px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 992px) {
+        max-width: 880px;
+    }
+
+    &-elements {
+
+        &__answer {
+        background-color: white;
+        padding: 10px 30px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        }
+    }
+}

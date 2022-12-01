@@ -1,0 +1,25 @@
+.portfolio {
+    width: 100%;
+    background-color: #F6F6F6;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &-content {
+        margin: 50px auto;
+    
+        &__items {
+            margin-top: 50px;
+
+            &-work {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+.working-image {
+    max-width: 100%;
+}
